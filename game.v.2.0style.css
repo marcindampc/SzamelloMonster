@@ -103,7 +103,7 @@ h1, h2, ol, #score, #time {
 }
 
 .dots {
-    background-image: url("../images/icons/hamburger (1).png");
+    background-image: url("img/hamburger (1).png");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ h1, h2, ol, #score, #time {
 
 .pacMan {
     fill: #029be5;
-    background-image: url("../images/logo1.svg");
+    background-image: url("img/logo1.svg");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
