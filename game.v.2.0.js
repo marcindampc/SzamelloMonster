@@ -176,7 +176,7 @@ $(document).ready(function () {
                 $('.start-screen, .play-screen').hide();
                 $('.end-screen').show().css('display', 'flex');
                 $('header h1').html('Fajna gra? Spróbuj jeszcze raz!');
-                $('div.thanks').append('Super! Twój wynik to ' + score).addClass('btn blue');
+                $('div.thanks').append('Super! Twój wynik to ' + score + ' ').addClass('btn blue');
              }
 
         }, 1000);
