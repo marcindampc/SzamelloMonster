@@ -1,0 +1,135 @@
+body {
+    background-color: #029be5;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, ol, #score, #time {
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+#score, #time {
+    display: inline-block;
+    font-size: 2rem;
+    border: 2px solid #029be5;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*.container {*/
+    /*!*min-height: 320px;*!*/
+    /*!*min-width: 320px;*!*/
+    /*width: 80vh;*/
+    /*height: 80vh;*/
+    /*margin: auto;*/
+/*}*/
+
+.game-screen {
+    background-color: #63ccff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.btn {
+    font-family: Nunito, sans-serif;
+    background-color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+}
+
+.blue {
+    color: #029be5;
+    border: 2px white solid;
+}
+
+/*start screen*/
+
+.start-screen {
+}
+
+.pacman-pic img {
+    width: 50px;
+}
+
+.logo{
+    padding: 5%;
+}
+
+/*play screen*/
+.play-screen {
+    display: none;
+}
+
+.table {
+    display: flex;
+    min-height: 320px;
+    min-width: 320px;
+    width: 30vw;
+    height: 30vw;
+    align-items: stretch;
+    flex-direction: column;
+    border: 2px solid #029be5;
+    border-radius: 5px;
+}
+
+.table > div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.table > div > div {
+    flex-grow: 1;
+    margin: 0;
+    border: 0 solid transparent;
+}
+
+.dots {
+    background-image: url("../images/icons/hamburger (1).png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pacMan {
+    fill: #029be5;
+    background-image: url("../images/logo1.svg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wall {
+    background-color: #029be5;
+}
+
+/*end-screen*/
+
+.end-screen {
+    display: none;
+}
+
+/*@media screen and (max-width: 800px) {*/
+  /*.table{*/
+      /*min-height: 320px;*/
+      /*min-width: 320px;*/
+  /*}*/
+    /*}*/

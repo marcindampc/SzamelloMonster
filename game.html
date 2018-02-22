@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="game.v.2.0style.css" type="text/css">
+
+    <title>Szamello Monster</title>
+</head>
+<body>
+<header>
+    <h1>
+        Dzięki za suba! Zagraj. Zasłużyłeś.
+    </h1>
+</header>
+
+<!--<div class="container">-->
+
+    <div class="game-screen start-screen">
+        <div class="logo">
+            <a href="http://broforce.jfdd8.is-academy.pl" target="_blank"><img src="img/logo1.svg" alt="Szamello logo"></a>
+        </div>
+
+        <div class="button">
+            <button class='btn blue' id="start-button" type="button">Start</button>
+        </div>
+
+    </div>
+<div class="game-screen play-screen">
+    <div class="timescore">
+    <div id="time">Smacznego :)</div>
+    <div id="score">0</div>
+    </div>
+    <div id="app">
+
+    </div>
+    <div class="button">
+        <button class='btn blue' id="finish-button" type="button">Idę zjeść</button>
+    </div>
+
+    </div>
+
+
+
+    <div class="game-screen end-screen">
+        <div class="thanks">
+
+        </div>
+
+        <div class="button">
+            <button class='btn blue' id="restart-button" type="button">Restart</button>
+        </div>
+        <!--<div class="button">-->
+            <!--<button class='btn blue' id="home-button" type="button">Home</button>-->
+        <!--</div>-->
+        <div class="button logo">
+            <img src="img/logo1.svg" alt="Szamello logo">
+        </div>
+    </div>
+<!--</div>-->
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="game.v.2.0.js"></script>
+<script>
+
+    //start to end screen
+
+    $('#high-scores, #finish-button').click(function(){
+        $('.start-screen, .play-screen').hide();
+        $('.end-screen').show().css('display', 'flex');
+    });
+
+    // start/end screen to play-screen
+
+    $('#start-button').click(function(){
+        $('.start-screen, .end-screen').hide();
+        $('.play-screen').show().css('display', 'flex');
+        $('.timescore').css('flex-direction', 'row')
+    });
+
+    $('#restart-button').click(function () {
+        $('.start-screen, .end-screen').hide();
+        $('.play-screen').show().css('display', 'flex');
+        });
+
+
+    $('#home-button').click(function () {
+        $('.play-screen, .end-screen').hide();
+        $('.start-screen').show().css('display', 'flex');
+    });
+
+
+
+</script>
+</body>
+</html>
